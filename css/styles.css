@@ -713,7 +713,7 @@ background-color: #404bbf;
         background-color: transparent;
 }
 
-.model-input:hover, .model-input:hover {
+.model-input:hover, .model-input:focus {
         border-color: #4D5AE5;
 
         
