@@ -580,6 +580,7 @@ background-color: #404bbf;
         letter-spacing: 0.04em;
         padding-left: 16px;
         color: #ffffff;
+        line-height: 2;
 }
 
 .footer-emeil::placeholder {
@@ -616,6 +617,10 @@ background-color: #404bbf;
 
 .icon-button {
       fill: #fff;
+}
+
+.footer-svg {
+        margin-left: 16px;
 }
 
 /* INPUT */
