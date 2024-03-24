@@ -828,7 +828,7 @@ background-color: #404bbf;
 }
 
 .model-comment {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         
 }
 
@@ -844,4 +844,8 @@ background-color: #404bbf;
 .user-comment:focus {
         border-color: #4D5AE5;
 
+}
+
+.model-input-wrap {
+        margin-bottom: 24px;
 }
