@@ -575,6 +575,11 @@ background-color: #404bbf;
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: transparent;
+        font-size: 12px;
+        line-height: 2px;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        color: #ffffff;
 }
 
 .footer-emeil::placeholder {
@@ -586,12 +591,13 @@ background-color: #404bbf;
         color: #fff;
         font-family: "Roboto", sans-serif;
         padding-left: 16px;
+        color: #ffffff;
 }
 
 .footer-button {
         border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+        min-width: 165px;
         height: 40px;
         gap: 16px;
         background: #4d5ae5;
@@ -605,6 +611,7 @@ background-color: #404bbf;
         justify-content: center;
         align-items: center;
         display: flex;
+        cursor: pointer;
 }
 
 .icon-button {
