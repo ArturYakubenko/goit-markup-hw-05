@@ -3,8 +3,8 @@ body {
     color: #434455;
     background-color:#fff;
 
-    h1, h2, h3, p {
-      
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0; 
     }
 
 }
@@ -504,7 +504,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
-        
+       
 }
 
 .footer-social-media-items {
@@ -512,6 +512,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         gap: 16px;
 }
 
+.footer-social-media {
+        margin-right: 80px;
+}
 
 .slider {
         position: absolute;
@@ -550,3 +553,253 @@ background-color: #404bbf;
 .footer-public-icon:focus {
        background-color: #31d0aa;
 }
+
+.subscribe {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 16px;
+}
+
+.footer-form {
+        display: flex;
+        gap: 24px;
+}
+
+.footer-emeil {
+        border: 1px solid #fff;
+        border-radius: 4px;
+        width: 264px;
+        height: 40px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background-color: transparent;
+}
+
+.footer-emeil::placeholder {
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        padding-left: 16px;
+}
+
+.footer-button {
+        border-radius: 4px;
+        padding: 8px 24px;
+        width: 165px;
+        height: 40px;
+        gap: 16px;
+        background: #4d5ae5;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+}
+
+.icon-button {
+      fill: #fff;
+}
+
+/* INPUT */
+
+.backdrop {
+        position: fixed;
+        top: 0;
+        background-color: rgba(46, 47, 66, 0.4);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+}
+
+.isopen {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+}
+
+.model {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 408px;
+        min-height: 584px;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        background: #fcfcfc;
+        padding: 24px;
+}
+
+.model-button {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #e7e9fc;
+        border: 4px;
+        border-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-button:hover {
+        background-color: #404bbf;
+        fill: #fff;
+}
+
+
+.model-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        max-width: 360px;
+        text-align: center;
+        margin-top: 48px;
+        margin-bottom: 16px;
+}
+
+.model-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        outline: none;
+        padding-left: 38px;
+        border-color: #2E2F42;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-input:hover {
+        border-color: #4d5ae5;
+
+        
+}
+
+.model-input:hover + .model-input-icon {
+        fill: #4d5ae5;
+        
+}
+
+.input-label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: block;
+        margin-bottom: 4px;
+}
+
+.model-input-wrap {
+        position: relative;
+        margin-bottom: 8px;
+}
+
+.model-input-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: #2E2F42;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-input-wrap {
+        margin-bottom: 8px;
+}
+
+.user-comment {
+        width: 360px;
+        height: 120px;
+        outline: none;
+        padding-left: 16px;
+        padding-top: 8px;
+        resize: none;
+
+}
+
+.user-comment::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+}
+.model-checkbox:checked + .checkbox-text span {
+        background-color: #404bbf;
+        border-color: #404bbf;
+        fill: #f4f4fd;
+} 
+
+
+
+
+.checkbox-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+        display: flex;
+        align-items: center;
+}
+
+.check-link {
+        line-height: 1.3;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+        display: inline;
+}
+
+.fake-checkbox {
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+}
+
+.form-button {
+        border-radius: 4px;
+        padding: 16px 32px;
+        width: 169px;
+        height: 56px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: #4d5ae5;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #fff;
+        border: none;
+        display: block;
+        margin-left: 95px;
+        margin-top: 24px;
+}
+
